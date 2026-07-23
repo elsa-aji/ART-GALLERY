@@ -4,7 +4,7 @@ A beautiful, responsive art gallery web application with **user authentication**
 
 ## 🚀 Live Demo
 
-**[👉 Click here to access the login page](https://elsa-aji.github.io/ART-GALLERY/)**
+**[👉 Click here to access the login page](./index.html)**
 
 ### Demo Credentials:
 ```
