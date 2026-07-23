@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scream - Art Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="art-detail-page">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="gallery.html">
+                <span class="me-2">🎨</span> Art Gallery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <a href="gallery.html" class="btn btn-outline-secondary mb-4">← Back to Gallery</a>
+        
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="art-detail-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1578926078328-123456789014?w=800&h=800&fit=crop" alt="The Scream" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="art-info slide-in">
+                    <h1 class="display-4 mb-2">The Scream</h1>
+                    <p class="lead text-muted mb-4">by Edvard Munch</p>
+                    
+                    <div class="mb-4">
+                        <p class="text-muted"><strong>Year of Creation:</strong> 1893</p>
+                        <p class="text-muted"><strong>Category:</strong> Expressionism, Psychological</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>Description</h5>
+                        <p>The Scream is an iconic expressionist masterpiece by Edvard Munch, created in 1893. This haunting artwork depicts a figure clutching their face in existential dread, set against a swirling, turbulent landscape. The painting explores themes of anxiety, isolation, and emotional anguish. Munch's bold use of color and distorted forms revolutionized modern art, influencing generations of artists. The Scream remains one of the most recognizable and impactful artworks in human history, symbolizing the modern human condition.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>Medium</h5>
+                        <p>Oil, tempera, and pastel on cardboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="similar-artworks">
+            <h3 class="mb-4">Similar Artworks</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="art-card">
+                        <div class="art-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579783902614-e3fb5141b0cb?w=400&h=400&fit=crop" alt="Starry Night" class="card-img-top art-image">
+                            <div class="overlay">
+                                <a href="art-piece-1.html" class="btn btn-light btn-sm">View</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Starry Night</h5>
+                            <p class="card-text text-muted">by Vincent van Gogh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="art-card">
+                        <div class="art-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1561214115-6d2f1b0609fa?w=400&h=400&fit=crop" alt="The Persistence of Memory" class="card-img-top art-image">
+                            <div class="overlay">
+                                <a href="art-piece-2.html" class="btn btn-light btn-sm">View</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Persistence of Memory</h5>
+                            <p class="card-text text-muted">by Salvador Dalí</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="art-card">
+                        <div class="art-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1577720643272-265f43123cf7?w=400&h=400&fit=crop" alt="American Gothic" class="card-img-top art-image">
+                            <div class="overlay">
+                                <a href="gallery.html" class="btn btn-light btn-sm">View</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">American Gothic</h5>
+                            <p class="card-text text-muted">by Grant Wood</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
