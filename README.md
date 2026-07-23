@@ -1,61 +1,56 @@
 # 🎨 Art Gallery Website
 
-A beautiful, responsive art gallery web application built with HTML, CSS, and Bootstrap 5. Featuring authentication pages, a curated gallery display, and detailed individual artwork pages with rich information and related artwork recommendations.
+A beautiful, responsive art gallery web application with **user authentication** and dynamic gallery display built with HTML, CSS, and JavaScript.
+
+## 🚀 Live Demo
+
+**[👉 Click here to access the login page](https://elsa-aji.github.io/ART-GALLERY/)**
+
+### Demo Credentials:
+```
+Username: admin     | Password: password123
+Username: user      | Password: user123
+Username: artist    | Password: artist123
+```
+
+---
 
 ## 📋 Project Overview
 
 This project is a complete art gallery web application with:
-- User authentication (Login & Sign Up)
-- Responsive gallery home page
-- 5 detailed individual artwork pages
-- Beautiful animations and transitions
-- Mobile-friendly responsive design
+- **User Authentication** (Login page with form validation)
+- **Dashboard Gallery** (Main gallery display after login)
+- **5 Individual Artwork Detail Pages**
+- **Beautiful animations and transitions**
+- **Mobile-friendly responsive design**
+- **Remember me functionality**
 
-**Total Pages:** 9 Pages
-- 2 Authentication Pages (Login, Sign Up)
-- 1 Gallery Home Page
-- 5 Individual Art Piece Pages
-- 1 Stylesheet (CSS)
+---
 
 ## ✨ Features
 
 ### 🎯 Core Features
+- ✅ **Modern Login Page** - Beautiful gradient design with form validation
+- ✅ **Remember Me** - LocalStorage to save username
+- ✅ **Dashboard Gallery** - Display art pieces after successful login
 - ✅ **Responsive Design** - Works seamlessly on mobile, tablet, and desktop
-- ✅ **Bootstrap 5 Framework** - Professional, modern UI components
-- ✅ **Beautiful Animations** - Smooth fade-in, slide-up, and zoom effects
-- ✅ **Interactive Hover Effects** - Image scaling, card elevation, overlay buttons
-- ✅ **No Form Validations** - Forms are ready for backend integration
+- ✅ **Beautiful Animations** - Smooth transitions and floating effects
+- ✅ **Interactive Elements** - Hover effects and smooth interactions
+- ✅ **Form Validation** - Client-side validation for better UX
 
-### 📱 Page Components
+### 📱 Pages
 
-#### Authentication Pages
-- **Login Page** - Email and password fields with remember me checkbox
-- **Sign Up Page** - Full registration form with password confirmation
+#### Authentication
+- **Login Page** (`index.html`) - Email/username and password with remember me
+- **Gallery Dashboard** (`gallery.html`) - Main gallery after successful login
 
-#### Gallery Section
-- **Gallery Home** - Displays 6 famous art pieces in a responsive grid
-- **Each Art Piece Shows:**
-  - High-quality artwork image
-  - Artist name
-  - Art category/type
-  - Interactive "View Details" button
+#### Artwork Pages
+- **Art Piece 1** (`art-piece-1.html`)
+- **Art Piece 2** (`art-piece-2.html`)
+- **Art Piece 3** (`art-piece-3.html`)
+- **Art Piece 5** (`art-piece-5.html`)
 
-#### Individual Artwork Pages (5 Pages)
-Each page includes:
-- Large artwork image
-- Artist name
-- Year of creation
-- Category/Art movement
-- Detailed description
-- Medium/Technique information
-- 2-3 similar artwork recommendations
-
-### 🖼️ Artwork Featured
-1. **Starry Night** - Vincent van Gogh (1889) - Post-Impressionism
-2. **The Persistence of Memory** - Salvador Dalí (1931) - Surrealism
-3. **The Birth of Venus** - Sandro Botticelli (1484) - Renaissance
-4. **Girl with a Pearl Earring** - Johannes Vermeer (1665) - Dutch Golden Age
-5. **The Scream** - Edvard Munch (1893) - Expressionism
+---
 
 ## 🚀 Getting Started
 
@@ -67,157 +62,179 @@ Each page includes:
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/elsa-aji/art-gallery.git
+git clone https://github.com/elsa-aji/ART-GALLERY.git
 ```
 
 2. **Navigate to the project directory:**
 ```bash
-cd art-gallery
+cd ART-GALLERY
 ```
 
 3. **Open in your browser:**
-   - Simply open any `.html` file in your web browser
-   - Example: Double-click `index.html` to start at the login page
+   - Simply open `index.html` in your web browser
+   - Or use a local server like Python's `http.server`:
+   ```bash
+   python -m http.server 8000
+   ```
+   - Then visit `http://localhost:8000`
 
 ### File Structure
 ```
-art-gallery/
-├── index.html              # Login page
-├── signup.html             # Sign up page
-├── gallery.html            # Gallery home page (main display)
-├── art-piece-1.html        # Starry Night details
-├── art-piece-2.html        # The Persistence of Memory details
-├── art-piece-3.html        # The Birth of Venus details
-├── art-piece-4.html        # Girl with a Pearl Earring details
-├── art-piece-5.html        # The Scream details
+ART-GALLERY/
+├── index.html              # Login page (entry point)
+├── gallery.html            # Gallery dashboard after login
+├── art-piece-1.html        # Artwork detail page 1
+├── art-piece-2.html        # Artwork detail page 2
+├── art-piece-3.html        # Artwork detail page 3
+├── art-piece-5.html        # Artwork detail page 5
 ├── css/
-│   └── style.css           # Main stylesheet with animations
-└── README.md               # This file
+│   ├── login.css          # Login page styles
+│   └── gallery.css        # Gallery page styles
+├── js/
+│   └── login.js           # Login form functionality
+└── README.md              # This file
 ```
+
+---
 
 ## 🎨 Design & Styling
 
 ### Color Scheme
-- **Primary Color:** Purple (#6c5ce7)
-- **Secondary Color:** Light Purple (#a29bfe)
-- **Background:** Light Gray (#f5f6fa)
-- **Dark Elements:** Dark Gray (#2d3436)
+- **Primary Color:** Purple (#667eea)
+- **Secondary Color:** Dark Purple (#764ba2)
+- **Background:** Gradient (Purple to Dark Purple)
+- **Light Elements:** White with opacity
 
-### Typography
-- **Font Family:** Segoe UI, Tahoma, Geneva, Verdana
-- **Font Weights:** 600-700 for headings, 400 for body text
+### Features
+- Glassmorphism effect on login box
+- Floating art animations
+- Smooth form transitions
+- Hover effects on buttons and links
 
-### Animations Included
-- **Fade-in:** Smooth opacity transitions
-- **Slide-up:** Elements sliding from bottom to top
-- **Slide-in:** Elements sliding from left to right
-- **Zoom Effects:** Image scaling on hover
-- **Card Elevation:** Shadow effects on hover
+---
 
 ## 💻 Technology Stack
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with animations
-- **Bootstrap 5** - Responsive grid system and components
-- **Font Awesome Ready** - Icon support (can be added)
-- **Unsplash Images** - High-quality artwork images
+- **JavaScript** - Form validation and localStorage
+- **No frameworks** - Lightweight and fast
 
-## 📸 Screenshots
+---
+
+## 🔐 Login Functionality
+
+### Features
+- Form validation (username and password required)
+- Password minimum length check (6 characters)
+- Error/success messages
+- Remember me checkbox with localStorage
+- Automatic redirect to gallery on successful login
+- Demo credentials for testing
+
+### How Login Works
+```javascript
+// Valid credentials (demo)
+admin / password123
+user / user123
+artist / artist123
+```
+
+---
+
+## 📸 Page Screenshots
 
 ### Login Page
-- Clean, centered card design
+- Centered card with glassmorphism effect
 - Purple gradient background
-- Email and password input fields
-- Link to sign up page
+- Smooth slide-in animation
+- Floating art emoji animations
 
-### Gallery Home Page
-- Responsive grid layout (1 col mobile, 2 cols tablet, 3 cols desktop)
-- Art cards with hover effects
-- Overlay "View Details" buttons
-- Navigation bar with logout
+### Gallery Dashboard
+- Navigation bar with logout button
+- Grid layout of art pieces
+- Responsive design (adapts to screen size)
+- Card hover effects
 
-### Individual Artwork Pages
-- Large artwork display
+### Artwork Detail Pages
+- Large artwork image
 - Complete artwork information
-- Related artwork suggestions (3 pieces)
+- Related artwork suggestions
 - Navigation back to gallery
-- Responsive layout with side-by-side design on desktop
 
-## 🔧 Customization
-
-### Change Colors
-Edit the CSS variables in `css/style.css`:
-```css
-:root {
-    --primary-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --dark-bg: #2d3436;
-    --light-bg: #f5f6fa;
-}
-```
-
-### Update Images
-Replace the image URLs in HTML files:
-```html
-<img src="YOUR_IMAGE_URL" alt="Description">
-```
-
-### Add More Artwork
-1. Create a new `art-piece-X.html` file
-2. Copy structure from existing art piece pages
-3. Update image URL, title, artist, year, description
-4. Add to gallery.html grid
-5. Link from related sections
-
-### Modify Text Content
-All text content is editable in the HTML files. Simply open any file and update:
-- Titles
-- Descriptions
-- Artist names
-- Categories
-- Button text
+---
 
 ## 🌐 Deployment
 
-### Deploy to GitHub Pages
+### Deploy to GitHub Pages (Already Live!)
+Your site is already live at:
+```
+https://elsa-aji.github.io/ART-GALLERY/
+```
 
-1. Push your code to GitHub
-2. Go to repository settings
-3. Scroll to "GitHub Pages"
-4. Select main branch as source
-5. Your site will be live at: `https://yourusername.github.io/art-gallery`
-
-### Other Hosting Options
+### Deploy to Other Platforms
 - **Netlify** - Drag and drop deployment
 - **Vercel** - Easy Git integration
 - **Firebase Hosting** - Free tier available
 - **Any static hosting service**
 
-## 📱 Responsive Breakpoints
+---
 
-- **Desktop:** 1200px and above
-- **Tablet:** 768px to 1199px
-- **Mobile:** Below 768px
+## 📱 Responsive Design
+
+- **Desktop:** 1200px and above - Full layout
+- **Tablet:** 768px to 1199px - Adjusted grid
+- **Mobile:** Below 768px - Optimized for small screens
+
+---
 
 ## ♿ Accessibility Features
 
 - Semantic HTML structure
 - Proper heading hierarchy
-- Image alt text for all images
+- Form labels for all inputs
 - Keyboard navigation support
 - Readable color contrast ratios
 - Responsive text sizing
 
-## 🎓 Learning Resources
+---
 
-### Bootstrap Documentation
-- [Bootstrap 5 Docs](https://getbootstrap.com/docs/5.0/)
+## 🔧 Customization
+
+### Change Login Credentials
+Edit `js/login.js`:
+```javascript
+const validCredentials = {
+    'yourUsername': 'yourPassword',
+    'admin': 'newPassword'
+};
+```
+
+### Modify Colors
+Edit `css/login.css` and `css/gallery.css`:
+```css
+background: linear-gradient(135deg, #YOUR_COLOR 0%, #YOUR_COLOR2 100%);
+```
+
+### Update Gallery Content
+1. Edit `gallery.html` to modify art pieces
+2. Update `art-piece-X.html` files with new content
+3. Add images by updating image URLs
+
+---
+
+## 🎓 Learning Resources
 
 ### CSS Animations
 - [MDN Web Docs - CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
 
-### Responsive Design
-- [Google's Web Fundamentals](https://developers.google.com/web/fundamentals)
+### Form Validation
+- [MDN Web Docs - Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+
+### LocalStorage
+- [MDN Web Docs - LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
+---
 
 ## 🤝 Contributing
 
@@ -231,24 +248,32 @@ Feel free to fork this project and customize it for your needs!
 - Add shopping cart for art sales
 - Integrate with backend API
 - Add user reviews/ratings
-- Implement user authentication
 - Add more artwork pieces
 - Create admin dashboard
+- Dark mode toggle
+
+---
 
 ## 📝 License
 
 This project is open source and available under the MIT License.
 
+---
+
 ## 👤 Author
 
 Created by **Elsa Aji**
 
+---
+
 ## 🙏 Credits
 
-- **Bootstrap 5** - CSS Framework
-- **Unsplash** - Free high-quality images
-- **Font Awesome** - Icons (optional integration)
-- **Famous Artists** - Original artwork inspiration
+- Modern UI/UX Design
+- CSS Animations
+- JavaScript Form Handling
+- GitHub Pages Hosting
+
+---
 
 ## 📞 Support
 
@@ -258,22 +283,10 @@ For issues, questions, or suggestions:
 3. Include screenshots if applicable
 4. Describe steps to reproduce the issue
 
-## 🎯 Future Enhancements
-
-Planned features for future versions:
-- [ ] Dark mode toggle
-- [ ] Image lightbox/modal viewer
-- [ ] Artist profile pages
-- [ ] Search and filter functionality
-- [ ] User favorites/wishlist
-- [ ] Comment section on artwork pages
-- [ ] Social media sharing buttons
-- [ ] Newsletter subscription
-- [ ] Multi-language support
-- [ ] Backend integration for data management
-
 ---
 
 **Enjoy exploring the world of art! 🎨**
 
-**Live Repository:** [https://github.com/elsa-aji/art-gallery](https://github.com/elsa-aji/art-gallery)
+**Live Demo:** [https://elsa-aji.github.io/ART-GALLERY/](https://elsa-aji.github.io/ART-GALLERY/)
+
+**Repository:** [https://github.com/elsa-aji/ART-GALLERY](https://github.com/elsa-aji/ART-GALLERY)
