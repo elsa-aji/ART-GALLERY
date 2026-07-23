@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Dashboard</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h2>🎨 Art Gallery</h2>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Collections</a>
+                <a href="#" class="nav-link">About</a>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <h1>Welcome to Your Art Gallery</h1>
+        <p>Explore our collection of beautiful artworks</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="art-placeholder">🖼️</div>
+                <h3>Modern Art</h3>
+                <p>Contemporary pieces</p>
+            </div>
+            <div class="gallery-item">
+                <div class="art-placeholder">🎭</div>
+                <h3>Classical</h3>
+                <p>Traditional artwork</p>
+            </div>
+            <div class="gallery-item">
+                <div class="art-placeholder">🖌️</div>
+                <h3>Digital Art</h3>
+                <p>Digital creations</p>
+            </div>
+            <div class="gallery-item">
+                <div class="art-placeholder">🌈</div>
+                <h3>Abstract</h3>
+                <p>Abstract expressions</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem('rememberedUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
